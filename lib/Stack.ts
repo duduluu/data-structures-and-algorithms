@@ -3,7 +3,7 @@
  */
 // tslint:disable:no-any
 export default class Stack<T = any> {
-  private readonly items: T[] = [];
+  private items: T[] = [];
 
   private top: number = 0;
 
@@ -30,6 +30,7 @@ export default class Stack<T = any> {
 
   public clear(): this {
     this.top = 0;
+    this.items = [];
 
     return this;
   }
